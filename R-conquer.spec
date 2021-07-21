@@ -4,7 +4,7 @@
 #
 Name     : R-conquer
 Version  : 1.0.2
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/conquer_1.0.2.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/conquer_1.0.2.tar.gz
 Summary  : Convolution-Type Smoothed Quantile Regression
