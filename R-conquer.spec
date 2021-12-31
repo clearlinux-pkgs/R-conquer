@@ -4,7 +4,7 @@
 #
 Name     : R-conquer
 Version  : 1.2.1
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/conquer_1.2.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/conquer_1.2.1.tar.gz
 Summary  : Convolution-Type Smoothed Quantile Regression
@@ -41,10 +41,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1635811367
+export SOURCE_DATE_EPOCH=1640992729
 
 %install
-export SOURCE_DATE_EPOCH=1635811367
+export SOURCE_DATE_EPOCH=1640992729
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -108,3 +108,5 @@ R CMD check --no-manual --no-examples --no-codoc conquer || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/conquer/libs/conquer.so
+/usr/lib64/R/library/conquer/libs/conquer.so.avx2
+/usr/lib64/R/library/conquer/libs/conquer.so.avx512
